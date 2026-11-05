@@ -274,3 +274,129 @@ body { background: #f8e1e9; }
 .footer-line span { color: #b05d83; }
 .toast { background: #81294e; }
 button:focus-visible, a:focus-visible, input:focus-visible { outline-color: #a83669; }
+
+/* ========================================================================
+   RADIANT GOLD EDITION — brighter, more luminous GOLD on every page
+   Replaces the old muted bronze accents without reducing legibility.
+   The darker honey-gold is only used for small print on white.
+   ======================================================================== */
+:root {
+  --gold: #B87600;
+  --gold-light: #FFE184;
+  --gold-bright: #FFCB36;
+  --gold-foil: #F4B823;
+  --gold-deep: #8D5600;
+}
+
+/* Bright champagne-gold framing around the invitation and portrait. */
+.hero-card {
+  border: 1.5px solid #E9AC31;
+  background:
+    radial-gradient(ellipse at 8% 8%, rgba(255, 203, 54, .24), transparent 41%),
+    radial-gradient(ellipse at 92% 11%, rgba(255, 220, 127, .28), transparent 37%),
+    radial-gradient(ellipse at 12% 76%, rgba(255, 169, 197, .36), transparent 50%),
+    linear-gradient(148deg, #FFF9ED 0%, #FFFEFD 45%, #FFF0F5 100%);
+  box-shadow: 0 17px 45px rgba(151, 52, 91, .14), 0 0 19px rgba(255, 199, 61, .10);
+}
+.hero-card:before { border: 2px solid rgba(228, 161, 36, .90); }
+.hero-card:after { border: 1px solid rgba(255, 213, 109, .68); }
+.portrait-glow {
+  border: 2px solid #F4BC33;
+  box-shadow: 0 0 0 7px rgba(255, 250, 238, .95),
+              0 0 0 10px #F8CC60,
+              0 0 22px 11px rgba(247, 194, 64, .24);
+}
+.portrait { border-color: #FFFCF0; }
+.brand-monogram {
+  border: 2px solid #E8AF25;
+  box-shadow: inset 0 0 0 1px #FFE4A3, 0 0 12px rgba(241, 190, 65, .17);
+  background: linear-gradient(140deg, #FFF1C3, #FFFDF5 55%, #FFE7F0);
+}
+.monogram-star { color: #E1A000; text-shadow: 0 0 5px #FFD569; }
+
+/* Rich metallic letter accents: warm bright gold, with dark edges for contrast. */
+.hero-eyebrow, .birthday-line strong, .quote-bottom {
+  color: #A36400;
+  font-weight: 800;
+  background: linear-gradient(180deg, #8E5200 0%, #C98700 55%, #A46400 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+.eyebrow, .detail-label, .search-label, .table-details-label,
+.moment-tag, .quote-bottom, .countdown-mini span {
+  color: #A56700;
+  font-weight: 800;
+  text-shadow: 0 1px 0 rgba(255, 243, 202, .42);
+}
+.eyebrow-line, .birthday-line>span {
+  height: 2px;
+  background: linear-gradient(90deg, #F4B41E, #FFE68A, #D99108);
+  box-shadow: 0 0 5px rgba(239, 182, 44, .19);
+}
+.hero-ornament, .portrait-sparkle, .hero-bottom-flourish,
+.quote-decoration, .banner-flower, .program-end>span {
+  color: #E5A20B;
+  text-shadow: 0 1px 0 #FFF0B8, 0 0 10px rgba(241, 167, 20, .38);
+}
+.hero-ornament-a { color: #EAB323; font-size: 40px; }
+.hero-ornament-b { color: #D99400; font-size: 20px; }
+.hero-bottom-flourish { font-size: 15px; }
+.quote-decoration { font-size: 31px; }
+.birthday-line { color: #A56700; }
+.home-quote { border-top-color: #EEC36F; }
+.home-quote p { color: #9B2E60; }
+
+/* Gold should read as gold even in the smaller service/info areas. */
+.action-card-program {
+  background: linear-gradient(140deg, #FFFCF4 0%, #FFF1BF 59%, #FFE4A1 100%);
+  border: 1.5px solid #E3AC33;
+  box-shadow: 0 9px 25px rgba(179, 121, 22, .15);
+}
+.action-card-program .action-icon {
+  color: #A96A00;
+  border: 1.5px solid #E9B649;
+  background: linear-gradient(145deg, #FFFFFF, #FFF1C6);
+  box-shadow: 0 2px 10px rgba(217, 158, 27, .13);
+}
+.action-card-program .action-arrow { color: #B37500; }
+.action-card-program strong { color: #5C3635; }
+.detail-card { border-color: #E9D2A1; }
+.countdown-card {
+  background: linear-gradient(105deg, #FFE1ED, #FFEDF3 49%, #FFE5A8 100%);
+  border-color: #E4B956;
+}
+.countdown-mini span { color: #AA6800; }
+
+/* Radiant gold arrival/date banner and celebratory program flourishes. */
+.program-banner {
+  background: linear-gradient(110deg, #FFE3EB 0%, #FFF1DB 55%, #FFE1A2 100%);
+  border: 1.5px solid #E3B149;
+  box-shadow: 0 6px 20px rgba(215, 154, 24, .10);
+}
+.banner-flower { color: #E1A414; }
+.timeline:before { background: linear-gradient(#E5A519 0%, #F5CE65 63%, transparent 100%); }
+.program-end {
+  background: linear-gradient(135deg, #FFE4ED 6%, #FFEFBE 100%);
+  border: 1.5px solid #E5B448;
+}
+.program-end>span { font-size: 31px; }
+
+/* Floor plan: the buffet and photo area now clearly read as gold. */
+.map-station rect[fill="url(#buffet-grad)"] {
+  fill: #FFE4A0;
+  stroke: #D8970C;
+  stroke-width: 2;
+}
+.map-station rect[fill="url(#buffet-grad)"] ~ .station-label,
+.map-station rect[fill="url(#buffet-grad)"] ~ .station-sub,
+.station-label, .station-sub, .photo-label { fill: #955900; }
+.photo-divider rect { fill: #FFF1C7; stroke: #F0C667; }
+.photo-divider line { stroke: #D99E23; }
+.map-table.is-selected .table-shape { stroke: #F2BD3C; stroke-width: 3; }
+.map-table.is-saved:not(.is-selected) .table-shape { stroke: #EAB125; stroke-width: 3; }
+.legend-box { border-color: #DCA335; background: #FFE8AE; }
+
+/* Gold-highlighted keyboard focus is easy to see without washing out text. */
+.action-card-program:focus-visible { outline-color: #E3AA20; }
