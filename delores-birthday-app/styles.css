@@ -13,3 +13,264 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.view{animation:none}.action-card,.map-table .table-shape,.moment-toggle{transition:none}}
 
 .map-table[data-table="head"] .table-text{font-size:14px}
+
+/* ================================================================
+   MOBILE READABILITY UPDATE — November 2026
+   Larger supporting copy, high-contrast labels, touch-friendly UI.
+   Keep this section at the END of styles.css so it overrides the
+   original decorative type scale. No HTML or JavaScript changes.
+   ================================================================ */
+:root{--muted:#755b65;--gold:#96692d}
+body{font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* Header and hero */
+.topbar{min-height:80px;height:auto;padding-block:16px}
+.brand-copy strong{font-size:22px}
+.brand-copy small{font-size:11px;letter-spacing:.09em;line-height:1.3}
+.date-chip{font-size:11px;letter-spacing:.055em;padding:9px 11px}
+.eyebrow{font-size:12px;letter-spacing:.17em;line-height:1.35}
+.hero-eyebrow{font-size:13px;margin-bottom:20px}
+.hero-pretitle{font-size:23px;line-height:1.2}
+.birthday-line strong{font-size:13px;letter-spacing:.13em}
+.birthday-line strong span{font-size:9px}
+.hero-copy p{font-size:16px;line-height:1.65;max-width:360px}
+.hero-bottom-flourish{font-size:15px}
+.countdown-card{padding:17px 14px;gap:11px}
+.countdown-kicker{font-size:11px;letter-spacing:.12em;line-height:1.35}
+.countdown-value{font-size:24px;line-height:1.15}
+.countdown-mini{font-size:26px}
+.countdown-mini span{font-size:12px}
+.section-heading h2,.map-title-row h2,.timeline-heading h2{font-size:clamp(31px,8.1vw,37px);line-height:1.13}
+.action-card{min-height:170px;padding:19px 15px;gap:15px}
+.action-card strong{font-size:25px;line-height:1.08}
+.action-card small{font-size:14px;line-height:1.45;color:#775763;margin-top:7px}
+.detail-card{min-height:152px;padding:17px 14px;gap:6px}
+.detail-label{font-size:12px;letter-spacing:.11em}
+.detail-card strong{font-size:23px}
+.detail-card>span:last-child{font-size:14px;line-height:1.4}
+.directions-link{font-size:15px;line-height:1.4;padding:16px}
+.quote-bottom{font-size:11px;line-height:1.4}
+.saved-seat-home .saved-copy,.saved-seat-home button{font-size:14px}
+/* Seating page, name search, roster and map */
+.page-heading p{font-size:16px;line-height:1.65;max-width:560px}
+.search-panel{padding:19px}
+.search-label{font-size:13px;letter-spacing:.13em}
+.search-box{height:55px}
+.search-box input{font-size:16px}
+.search-hint{font-size:14px;line-height:1.5}
+.search-result strong{font-size:16px}
+.search-result small{font-size:13px;line-height:1.4}
+.search-result .result-number{font-size:12px;padding:8px 10px}
+.search-empty{font-size:14px;line-height:1.5}
+.found-caption{font-size:12px;letter-spacing:.10em}
+.found-name{font-size:25px;line-height:1.15}
+.found-table{font-size:12px}
+.map-pink-pill,.timeline-totals{font-size:12px;letter-spacing:.03em;padding:9px 11px}
+.floorplan-topbar{font-size:11px;line-height:1.3;letter-spacing:.03em;gap:10px;flex-wrap:wrap}
+.floorplan-topbar>span:first-child{letter-spacing:.07em}
+.floorplan-topbar>span:last-child{font-size:11px}
+.station-label{font-size:12px;letter-spacing:.5px}
+.station-sub{font-size:9px;letter-spacing:.25px}
+.photo-label{font-size:12px;letter-spacing:1px}
+.compass-label text{font-size:10px;letter-spacing:.5px}
+.map-table .table-text{font-size:23px}
+.map-table[data-table="head"] .table-text{font-size:16px}
+.map-table .table-subtext{font-size:10px;letter-spacing:.4px}
+.map-legend{font-size:12px;line-height:1.35;gap:10px 13px}
+.map-disclaimer{font-size:13px;line-height:1.5;color:#715e65}
+.table-details-label{font-size:12px;letter-spacing:.12em}
+.table-details-sub{font-size:14px;line-height:1.45}
+.table-count{font-size:12px}
+.guest-grid{gap:10px}
+.guest-entry{font-size:15px;line-height:1.4;min-height:48px;padding:11px 10px;overflow-wrap:anywhere}
+.guest-entry:before{font-size:15px}
+.primary-button,.secondary-button{font-size:14px;min-height:49px;line-height:1.3}
+.empty-table p{font-size:15px}
+.table-pill{font-size:15px;min-height:46px}
+.table-pill.head-pill{font-size:14px}
+/* Schedule: times, activity categories, descriptions and expanded copy */
+.program-banner strong{font-size:26px}
+.program-banner small{font-size:14px;line-height:1.5}
+.moment-clock{font-size:20px;line-height:1.1}
+.moment-clock small{font-size:12px!important;line-height:1.3}
+.moment-tag{font-size:12px;line-height:1.3;letter-spacing:.11em;margin-bottom:8px}
+.moment-card{padding:19px 16px}
+.moment-card h3{font-size:27px;line-height:1.12}
+.moment-short{font-size:15px;line-height:1.5;margin-top:9px;color:#765d67}
+.moment-toggle{height:32px;width:32px;min-width:32px;font-size:20px}
+.moment-expanded{font-size:15px;line-height:1.65}
+.program-end p{font-size:15px;line-height:1.6}
+/* Bottom controls: 14px minimum so labels remain readable */
+.nav-item{font-size:14px;padding:11px 6px 12px;gap:7px}
+.nav-item svg{width:24px;height:24px}
+.footer-line{font-size:11px;line-height:1.5}
+.toast{font-size:14px;line-height:1.4}
+/* Allow larger type to breathe on narrower phones */
+@media(max-width:389px){
+ .topbar{padding-inline:13px;gap:7px}
+ .brand{gap:7px}
+ .brand-monogram{width:38px;height:38px;font-size:26px;flex-shrink:0}
+ .brand-copy strong{font-size:19px}
+ .brand-copy small{font-size:10px;letter-spacing:.05em}
+ .date-chip{font-size:10px;padding:8px 9px}
+ .hero-card{padding-left:17px;padding-right:17px}
+ .hero-pretitle{font-size:21px}
+ .hero-copy p{font-size:15px}
+ .countdown-value{font-size:21px}
+ .action-card{padding:16px 12px}
+ .action-card strong{font-size:23px}
+ .action-card small{font-size:13px}
+ .section-heading h2,.map-title-row h2,.timeline-heading h2{font-size:30px}
+ .map-pink-pill,.timeline-totals{font-size:11px;padding:8px}
+ .guest-grid{grid-template-columns:1fr}
+ .moment{grid-template-columns:62px minmax(0,1fr);gap:7px}
+ .moment-card{padding:16px 13px}
+ .moment-card h3{font-size:25px}
+ .moment-short{font-size:14px}
+}
+
+/* =====================================================================
+   CELEBRATION PALETTE — VIBRANT ROSE / GOLD / WHITE (Nov 2026)
+   Elegant, richer colour saturation; preserves the enlarged type scale.
+   Keep at END of styles.css. No changes to markup or seating logic.
+   ===================================================================== */
+:root {
+  --bg: #fffafc;
+  --white: #ffffff;
+  --ink: #492638;
+  --muted: #765362;
+  --wine: #992e60;
+  --deep: #702245;
+  --gold: #9d681f;          /* Dark metallic gold for legible small labels */
+  --gold-light: #f5d99d;
+  --border: #efd0dc;
+  --pink: #ffe1ed;
+  --pink-mid: #ffc5d8;
+  --shadow: 0 16px 40px rgba(145, 48, 89, .14);
+}
+body { background: #f8e1e9; }
+.app-shell { background: var(--bg); box-shadow: 0 0 70px rgba(112, 34, 69, .17); }
+.app-shell:before { background: radial-gradient(circle, rgba(255, 187, 207, .28), transparent 71%); }
+.topbar { background: rgba(255, 250, 252, .97); border-bottom-color: #efc7d4; }
+.brand { color: var(--deep); }
+.brand-monogram {
+  color: var(--deep);
+  border: 1.5px solid #c89736;
+  background: linear-gradient(140deg, #fff5e8, #ffe4eb);
+  box-shadow: 0 2px 8px rgba(170, 73, 99, .09);
+}
+.monogram-star { color: #c08a27; }
+.brand-copy small { color: #9d476b; }
+.date-chip {
+  color: #872d53;
+  background: linear-gradient(120deg, #fff2f6, #ffe4ee);
+  border-color: #edb9cb;
+}
+.date-chip-dot, .floorplan-live-dot { background: #bd3a72; }
+.eyebrow, .detail-label, .search-label, .table-details-label,
+.moment-tag, .quote-bottom { color: #a36a1e; }
+.hero-card {
+  border-color: #e5b4bf;
+  background:
+    radial-gradient(ellipse at 13% 14%, rgba(255, 169, 197, .55), transparent 53%),
+    radial-gradient(ellipse at 92% 79%, rgba(255, 198, 213, .58), transparent 50%),
+    linear-gradient(144deg, #fff7f4 0%, #fffefd 47%, #fff0f5 100%);
+  box-shadow: 0 16px 43px rgba(157, 57, 94, .16);
+}
+.hero-card:before { border-color: rgba(196, 139, 43, .74); }
+.hero-card:after { border-color: rgba(204, 151, 63, .40); }
+.hero-ornament, .portrait-sparkle, .quote-decoration { color: #c38b27; }
+.eyebrow-line, .birthday-line>span { background: #c89535; }
+.portrait-glow {
+  border-color: #c99331;
+  box-shadow: 0 0 0 7px rgba(255, 249, 240, .88), 0 0 0 9px rgba(210, 156, 63, .65);
+}
+.portrait { border-color: #fffdf8; box-shadow: 0 9px 27px rgba(112, 34, 69, .27); }
+.hero-pretitle { color: #91415e; }
+.hero-name { color: #972b5d; text-shadow: 0 2px 0 #fff7f9, 0 6px 16px rgba(153, 46, 96, .09); }
+.hero-copy p, .countdown-kicker { color: #724151; }
+.hero-bottom-flourish, .countdown-mini span { color: #a46e26; }
+.countdown-card {
+  background: linear-gradient(100deg, #ffdfeb 0%, #fff0f3 55%, #ffefda 100%);
+  border-color: #e7b1c5;
+  box-shadow: 0 8px 24px rgba(161, 62, 101, .12);
+}
+.countdown-icon { color: #b63a70; border-color: #e7a3bd; background: #fffaff; }
+.countdown-value, .countdown-mini { color: #8d2756; }
+.section-heading h2, .map-title-row h2, .timeline-heading h2,
+.page-heading h1, .moment-card h3, .detail-card strong { color: var(--ink); }
+.heading-heart { color: #cf5281; }
+.action-card {
+  border-color: #e9bfcf;
+  box-shadow: 0 9px 25px rgba(145, 49, 91, .10);
+}
+.action-card-seat { background: linear-gradient(145deg, #fff1f6 0%, #ffd5e4 100%); }
+.action-card-program { background: linear-gradient(145deg, #fffaf0 0%, #ffebc8 100%); border-color: #efd7a8; }
+.action-icon { color: #bd3e72; background: #fffafc; border-color: #f0b9cc; }
+.action-card-program .action-icon { color: #a46c1a; border-color: #e4bf72; }
+.action-card small { color: #744757; }
+.action-arrow { color: #ac3a69; }
+.action-card-program .action-arrow { color: #ae761f; }
+.detail-card, .directions-link { background: #fff; border-color: #efd0da; }
+.detail-icon { color: #a43566; }
+.detail-card>span:last-child { color: #765464; }
+.directions-link { color: #972e5d; box-shadow: 0 3px 14px rgba(151, 46, 93, .05); }
+.home-quote { border-top-color: #edc5d2; }
+.home-quote p { color: #9d315f; }
+.saved-seat-home { border-color: #e7b4c5; border-left-color: #ba3b70; }
+/* Stronger but still soft contrast on the seating page. */
+.page-heading p { color: #795361; }
+.search-panel, .map-card, .table-details { border-color: #ecc6d4; background: #fff; box-shadow: 0 10px 26px rgba(135, 46, 82, .08); }
+.search-box { background: #fff4f8; border-color: #ebb9cb; }
+.search-box:focus-within { border-color: #b53770; box-shadow: 0 0 0 3px rgba(217, 104, 147, .20); }
+.search-box>svg { color: #aa3666; }
+.search-box input::placeholder { color: #947382; }
+.search-result:focus,.search-result:hover { background: #ffe4ef; }
+.search-result .result-number { color: #922f5e; background: #ffe8f0; }
+.seat-found { border-color: #e5a6bd; background: linear-gradient(120deg, #ffdeeb, #fff8fb); }
+.map-pink-pill, .timeline-totals { background: #ffdfeb; color: #8f2a56; }
+.floorplan-topbar, .floorplan-topbar>span:last-child, .map-legend, .map-disclaimer { color: #805460; }
+.floorplan-topbar>span:first-child { color: #9c325f; }
+.map-table .table-shape { fill: #fff6f9; stroke: #c6819e; }
+.map-table .table-text { fill: #822a52; }
+.map-table .table-subtext { fill: #8d4a65; }
+.map-table:hover .table-shape,.map-table:focus-visible .table-shape { fill: #ffe0ec; stroke: #b8396b; }
+.map-table.is-selected .table-shape { fill: #a32d62; stroke: #d6ab53; filter: drop-shadow(0 3px 8px rgba(163, 45, 98, .35)); }
+.map-table.is-selected .table-text, .map-table.is-selected .table-subtext { fill: #fff; }
+.map-table.is-saved:not(.is-selected) .table-shape { stroke: #cb992e; }
+.map-table.is-saved:not(.is-selected) .table-text { fill: #7c4f12; }
+.table-details h3 { color: #8f2a57; }
+.table-details-sub { color: #725363; }
+.guest-entry { background: #fff3f7; border-color: #f3d4df; color: #623b50; }
+.guest-entry:before { color: #c08a2b; }
+.guest-entry.is-person { background: #ffd9e8; border-color: #bd477a; color: #85244f; }
+.primary-button { background: linear-gradient(135deg, #a52961, #83244f); border-color: #8e2755; color: #fff; }
+.secondary-button { color: #8f2b57; border-color: #dfacc1; background: #fff5f8; }
+.table-pill { color: #8b325a; border-color: #edbfce; background: #fff8fa; }
+.table-pill.is-current { color: #fff; background: #992e60; border-color: #992e60; }
+/* Program chronology and highlights */
+.program-banner { background: linear-gradient(115deg, #ffdee9, #ffedf3 55%, #fff6e8); border-color: #eab6c9; }
+.program-banner strong { color: #8b2754; }
+.program-banner small { color: #754b5d; }
+.program-date-number { color: #972e60; }
+.banner-flower { color: #d69b44; }
+.timeline:before { background: linear-gradient(#d281a1 0%, #e5b973 85%, transparent); }
+.moment-clock { color: #8f2b58; }
+.moment-card { border-color: #ecd0d8; background: #fff; box-shadow: 0 8px 24px rgba(146, 50, 91, .075); }
+.moment-card:active { background: #fff0f6; }
+.moment-short, .moment-expanded { color: #745363; }
+.moment-toggle { background: #ffedf4; border-color: #e8b6c7; color: #a52e62; }
+.moment-card[aria-expanded=true] .moment-toggle { background: #fcd1e1; }
+.moment-card.featured { background: linear-gradient(145deg, #ffe3ed 0%, #fff6f9 100%); border-color: #dfa8bd; }
+.moment-card.featured .moment-tag { color: #ac366c; }
+.program-end { background: linear-gradient(135deg, #ffe3eb, #fff3db); border-color: #e8b9ba; }
+.program-end strong { color: #8c2855; }
+.program-end p { color: #75505c; }
+/* Bottom navigation: more vibrant rose, better active-state clarity. */
+.bottom-nav { background: rgba(255, 255, 255, .98); border-color: #ecc5d2; box-shadow: 0 10px 35px rgba(118, 32, 70, .20); }
+.nav-item { color: #885467; }
+.nav-item.active { color: #fff; background: linear-gradient(135deg, #ac3a72 0%, #85294f 100%); }
+.nav-item.active svg { color: #fff; }
+.footer-line { color: #986b7b; }
+.footer-line span { color: #b05d83; }
+.toast { background: #81294e; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline-color: #a83669; }
