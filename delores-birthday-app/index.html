@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fffaf8">
+  <meta name="description" content="Delores Baptiste's 69th birthday celebration — find your seat, explore the floor plan, and follow the event program.">
+  <title>Delores' 69th | Birthday Celebration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Tailwind provides layout utilities; app-specific styles live in styles.css. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>if (window.tailwind) tailwind.config={theme:{extend:{colors:{roseGold:'#B47B78',champagne:'#B78B49',wine:'#793E54',blush:'#FAEBEF'},fontFamily:{sans:['DM Sans','sans-serif'],display:['Cormorant Garamond','serif'],script:['Great Vibes','cursive']}}}};</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand flex items-center" type="button" data-go="home" aria-label="Go to home page">
+        <span class="brand-monogram" aria-hidden="true">D<span class="monogram-star">✦</span></span>
+        <span class="brand-copy"><strong>Delores' 69th</strong><small>A Birthday Celebration</small></span>
+      </button>
+      <span class="date-chip"><span class="date-chip-dot"></span> NOV 15, 2026</span>
+    </header>
+
+    <main id="main-content" class="main-content">
+      <!-- HOME -->
+      <section class="view" id="view-home" aria-labelledby="home-heading">
+        <div class="hero-card">
+          <div class="hero-ornament hero-ornament-a" aria-hidden="true">✧</div>
+          <div class="hero-ornament hero-ornament-b" aria-hidden="true">✦</div>
+          <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> YOU'RE INVITED <span class="eyebrow-line"></span></div>
+          <div class="portrait-wrap">
+            <div class="portrait-glow"></div>
+            <img class="portrait" src="assets/delores-portrait.webp" alt="Delores Baptiste smiling in her birthday invitation portrait" width="220" height="220">
+            <span class="portrait-sparkle sparkle-one" aria-hidden="true">✦</span>
+            <span class="portrait-sparkle sparkle-two" aria-hidden="true">✧</span>
+          </div>
+          <div class="hero-copy">
+            <span class="hero-pretitle">Celebrating 69 wonderful years of</span>
+            <h1 id="home-heading" class="hero-name">Delores</h1>
+            <div class="birthday-line"><span></span><strong>69<span>TH</span> BIRTHDAY</strong><span></span></div>
+            <p>Join us for an afternoon of love, laughter, beautiful memories, and a whole lot of joy.</p>
+          </div>
+          <div class="hero-bottom-flourish" aria-hidden="true">✦ &nbsp; ❦ &nbsp; ✦</div>
+        </div>
+
+        <div class="countdown-card" aria-live="polite">
+          <div class="countdown-icon" aria-hidden="true">✧</div>
+          <div><p class="countdown-kicker">THE CELEBRATION BEGINS</p><p class="countdown-value" id="countdown-value">Sunday, November 15</p></div>
+          <div class="countdown-mini">3:30 <span>PM</span></div>
+        </div>
+
+        <div id="saved-seat-home" class="saved-seat-home" hidden></div>
+
+        <div class="section-heading home-section-heading"><span class="eyebrow">YOUR CELEBRATION GUIDE</span><h2>Everything, all in one place <span class="heading-heart">♡</span></h2></div>
+        <div class="action-grid grid grid-cols-2">
+          <button class="action-card action-card-seat" type="button" data-go="seating">
+            <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10h16M5 10V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3M6 10v8m12-8v8M4 18h16M9 10v-5m6 5V5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span><strong>Find Your Seat</strong><small>Guest list & floor plan</small></span>
+            <span class="action-arrow" aria-hidden="true">↗</span>
+          </button>
+          <button class="action-card action-card-program" type="button" data-go="program">
+            <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M8 14h3M8 17h6" stroke-linecap="round"/></svg></span>
+            <span><strong>Event Program</strong><small>Every special moment</small></span>
+            <span class="action-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+
+        <div class="section-heading details-heading"><span class="eyebrow">THE DETAILS</span><h2>Save the date</h2></div>
+        <div class="detail-grid grid grid-cols-2">
+          <div class="detail-card"><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18" stroke-linecap="round"/></svg></span><span class="detail-label">WHEN</span><strong>Sunday, Nov 15</strong><span>2026 · 3:30 PM</span></div>
+          <div class="detail-card"><span class="detail-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span class="detail-label">WHERE</span><strong>Brampton, ON</strong><span>6 Westwyn Court</span></div>
+        </div>
+        <a class="directions-link" href="https://www.google.com/maps/search/?api=1&amp;query=6%20Westwyn%20Ct%2C%20Brampton%2C%20Ontario%20L6T%204T5" target="_blank" rel="noopener noreferrer"><span>Get directions to the celebration</span><span aria-hidden="true">↗</span></a>
+
+        <div class="home-quote"><span class="quote-decoration" aria-hidden="true">❦</span><p>Good friends, brighter days,<br>special memories, always.</p><span class="quote-bottom">WITH LOVE, FOR DELORES ♡</span></div>
+      </section>
+
+      <!-- SEATING -->
+      <section class="view" id="view-seating" aria-labelledby="seating-heading" hidden>
+        <div class="page-heading"><span class="eyebrow">A PLACE FOR EVERYONE</span><h1 id="seating-heading">Find your <em>seat</em></h1><p>Search for your name or tap any table on the floor plan to see who's sitting there.</p></div>
+        <div class="search-panel">
+          <label class="search-label" for="guest-search">FIND YOUR NAME</label>
+          <div class="search-box"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4" stroke-linecap="round"/></svg><input id="guest-search" type="search" inputmode="search" enterkeyhint="search" placeholder="Type your first or last name..." autocomplete="off" aria-controls="search-results" aria-expanded="false"><button id="clear-search" type="button" aria-label="Clear search" hidden>×</button></div>
+          <div id="search-results" class="search-results" aria-live="polite" hidden></div>
+          <p class="search-hint" id="search-hint">All <span id="guest-count">112</span> guests are included in the seating list.</p>
+        </div>
+        <div id="seat-found" class="seat-found" hidden></div>
+        <div class="map-title-row"><div><span class="eyebrow">TAP TO EXPLORE</span><h2>Seating & floor plan</h2></div><span class="map-pink-pill">15 TABLES</span></div>
+        <div class="map-card">
+          <div class="floorplan-topbar"><span><span class="floorplan-live-dot"></span> INTERACTIVE FLOOR PLAN</span><span>Buffet at the top <span aria-hidden="true">↑</span></span></div>
+          <svg id="floorplan" viewBox="0 0 390 650" preserveAspectRatio="xMidYMin meet" role="group" aria-label="Seating floor plan. Select a numbered table or the head table to view guests.">
+            <defs><pattern id="floor-grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M 26 0 L 0 0 0 26" fill="none" stroke="#F1E7E5" stroke-width="0.7"/></pattern><linearGradient id="buffet-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4DF"/><stop offset="1" stop-color="#F9E5C9"/></linearGradient></defs>
+            <rect x="2" y="2" width="386" height="646" rx="25" fill="#FFFCFA" stroke="#F0E3E4" stroke-width="1.5"/>
+            <rect x="6" y="6" width="378" height="638" rx="20" fill="url(#floor-grid)"/>
+            <g class="map-station"><rect x="106" y="20" width="174" height="47" rx="10" fill="url(#buffet-grad)" stroke="#D2A66A" stroke-dasharray="4 4"/><text x="193" y="42" text-anchor="middle" class="station-label">BUFFET</text><text x="193" y="55" text-anchor="middle" class="station-sub">DINNER SERVICE</text></g>
+            <g class="map-station"><rect x="309" y="111" width="67" height="89" rx="12" fill="#F5F0EC" stroke="#DFD3CF"/><text x="342.5" y="157" text-anchor="middle" class="station-label">KITCHEN</text></g>
+            <g class="map-station"><rect x="9" y="106" width="28" height="85" rx="9" fill="#FCEBF0" stroke="#EDCBD5"/><text x="23" y="149" text-anchor="middle" class="station-label" transform="rotate(-90 23 149)">DRINKS</text></g>
+            <g class="map-station"><rect x="314" y="263" width="57" height="70" rx="10" fill="#FCEBF0" stroke="#EAC4D0"/><text x="342" y="293" text-anchor="middle" class="station-label"><tspan x="342">FOOD</tspan><tspan x="342" dy="14">TABLE</tspan></text></g>
+            <g class="photo-divider"><line x1="184" y1="384" x2="184" y2="594" stroke="#D8BD9F" stroke-width="1.8" stroke-dasharray="6 5"/><rect x="159" y="429" width="50" height="118" rx="16" fill="#F9F3E7" fill-opacity="0.9"/><text x="184" y="490" class="photo-label" text-anchor="middle" transform="rotate(-90 184 490)">PHOTO AREA</text></g>
+            <g id="tables-layer"></g>
+            <g class="compass-label"><text x="24" y="627">ENTRANCE / GUEST AREA</text></g>
+          </svg>
+          <div class="map-legend"><span><i class="legend-dot legend-table"></i> Guest tables</span><span><i class="legend-dot legend-selected"></i> Selected table</span><span><i class="legend-box"></i> Service areas</span></div>
+        </div>
+        <p class="map-disclaimer">Floor plan recreated from the provided hand-drawn layout. Table locations are approximate and not to scale.</p>
+        <div id="table-details" class="table-details" aria-live="polite"></div>
+        <div class="browse-block"><span class="eyebrow">BROWSE BY NUMBER</span><div id="table-pills" class="table-pills" aria-label="Choose a table"></div></div>
+      </section>
+
+      <!-- PROGRAM -->
+      <section class="view" id="view-program" aria-labelledby="program-heading" hidden>
+        <div class="page-heading"><span class="eyebrow">THE DAY'S SPECIAL MOMENTS</span><h1 id="program-heading">The <em>program</em></h1><p>A celebration filled with love, music, memories, laughter and a little dancing.</p></div>
+        <div class="program-banner"><span class="program-date-number">15</span><span><strong>Sunday, November</strong><small>2026 · Celebration starts at 3:30 PM</small></span><span class="banner-flower" aria-hidden="true">✧</span></div>
+        <div class="timeline-heading"><div><span class="eyebrow">FROM ARRIVAL TO DANCING</span><h2>Order of celebration</h2></div><span class="timeline-totals">13 MOMENTS</span></div>
+        <div class="timeline" id="timeline"></div>
+        <div class="program-end"><span aria-hidden="true">✦</span><strong>Here's to 69 beautiful years!</strong><p>Thank you for celebrating Delores and being part of her story.</p></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav grid grid-cols-3" aria-label="Primary navigation">
+      <button type="button" class="nav-item active" data-go="home" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home</span></button>
+      <button type="button" class="nav-item" data-go="seating"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 9h16M5 9V6h14v3M6 9v11m12-11v11M4 20h16M9 6V3m6 3V3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Seating</span></button>
+      <button type="button" class="nav-item" data-go="program"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M7 3v4m10-4v4M3.5 10h17M8 14h8M8 17h5" stroke-linecap="round"/></svg><span>Program</span></button>
+    </nav>
+    <div class="footer-line">MADE WITH LOVE FOR DELORES <span aria-hidden="true">♡</span></div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+  <script src="app.js" defer></script>
+</body>
+</html>
